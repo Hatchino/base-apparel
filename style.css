@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+/* variable */
+
+:root {
+    --Desaturated-Red: hsl(0, 36%, 70%);
+    --Soft-Red: hsl(0, 93%, 68%);
+    --Dark-Grayish-Red: hsl(0, 6%, 24%);
+}
+
+/* reset */
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+   
+}
+
+/* body */
+
+main {
+    display: flex;
+    height: 100vh;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.center-div {
+    padding: 70px 280px 70px 200px;
+    flex-grow: 2;
+    background: url(images/bg-pattern-desktop.svg) no-repeat;
+    background-size: cover;
+}
+main div:last-child {
+    flex-grow: 1;
+}
+#logo {
+    margin-bottom: 120px;
+}
+img {
+    object-fit: contain;
+}
+div:last-child img {
+    height: 100%;
+}
+
+
+main h1 {
+    color: var(--Dark-Grayish-Red);
+    font-size: 75px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+h1 span {
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+}
+.center-div p {
+    color: var(--Desaturated-Red);
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+label {
+    display: none;
+}
+form {
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+}
+input[type="email"] {
+    padding: 20px 30px;
+    border: 1px solid var(--Desaturated-Red);
+    border-radius: 30px;
+    width: 100%;
+    opacity: 0.5;
+}
+input[type="email"]:focus {
+    border: 2px solid var(--Soft-Red);
+}
+button[type="submit"] {
+    background: var(--Desaturated-Red);
+    border-radius: 30px;
+    border: 1px solid var(--Desaturated-Red);
+    padding: 17px 40px;
+    position: absolute;
+    right: 0px;
+    box-shadow: -1px 15px 40px -11px var(--Desaturated-Red);
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+}
+button[type="submit"]:hover {
+    cursor: pointer;
+    
+}
+::placeholder {
+    color: var(--Desaturated-Red);
+    font-weight: 600;
+}
+
+/* error */
+
+#form div > img {
+    display: none;
+}
+p:last-child{
+    margin-top: 10px;
+    margin-left: 25px;
+    color: var(--Soft-Red);
+}
+.center-div .error {
+    border: 2px solid var(--Soft-Red);
+}
+.icon-error {
+    position: absolute;
+    display: flex;
+    background-color: var(--Soft-Red);
+    border-radius: 50%;
+    align-items: center;
+    top: 16px;
+    right: 110px;
+}
+
+/* footer */
+.attribution { 
+    font-size: 11px; 
+    margin-top: 10px;
+    text-align: right;
+    color: var(--Desaturated-Red);
+    font-weight: 300;
+}
+.attribution a {
+     text-decoration: none;
+     color: var(--Desaturated-Red);
+     font-weight: 600;
+
+}
