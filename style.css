@@ -25,7 +25,6 @@ body {
 
 main {
     display: flex;
-    height: 100vh;
 }
 ::-webkit-scrollbar {
     display: none;
@@ -45,10 +44,12 @@ main div:last-child {
 img {
     object-fit: contain;
 }
+.mobile-image img {
+    display: none;
+}
 div:last-child img {
     height: 100%;
 }
-
 
 main h1 {
     color: var(--Dark-Grayish-Red);
@@ -140,4 +141,38 @@ p:last-child{
      color: var(--Desaturated-Red);
      font-weight: 600;
 
+}
+@media all and (max-width: 767px) {
+    main {
+        display: block;
+    }
+    .mobile-image img {
+        width: 100%;
+        display: block;
+    }
+    .desktop-image img {
+        display: none;
+    }
+    div:last-child img {
+        width: 100%;
+    }
+    .center-div {
+        padding: 30px 0;
+        display: block;
+        text-align: center;
+    }
+    #logo {
+        margin-bottom: 20px;
+        padding-right: 150px;
+    }
+    main h1 {
+        font-size: 55px;
+        margin: 70px 0 30px 0;
+    }
+    .center-div p {
+        margin: 20px;
+    }
+    form {
+        margin: 20px;
+    }
 }

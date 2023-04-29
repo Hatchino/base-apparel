@@ -11,6 +11,12 @@
   <main>
     <div class="center-div">
       <img src="images/logo.svg" alt="logo Base Apparel" id="logo">
+      <figure class="mobile-image">
+        <picture>
+          <source media="(max-width: 767px)" srcset="images/hero-mobile.jpg">
+          <img src="images/hero-desktop.jpg" alt="women with brown hair">
+        </picture>
+      </figure>
       <h1><span>We're</span> coming soon</h1>
       <p> Hello fellow shoppers! We're currently building our new fashion store. 
       Add your email below to stay up-to-date with announcements and our launch deals. </p>
@@ -23,8 +29,13 @@
         </button>
       </form>
     </div>
-    <div>
-      <img src="images/hero-desktop.jpg" alt="women with brown hair">
+    <div class="overflow">
+      <figure class="desktop-image">
+        <picture>
+          <source media="(min-width: 768px)" srcset="images/hero-desktop.jpg">
+          <img src="images/hero-desktop.jpg" alt="women with brown hair">
+        </picture>
+      </figure>
     </div>
   </main>
   
