@@ -25,9 +25,13 @@ body {
 
 main {
     display: flex;
+    height: 100vh;
 }
 ::-webkit-scrollbar {
     display: none;
+}
+.desktop-image {
+    height: 100%;
 }
 .center-div {
     padding: 70px 280px 70px 200px;
